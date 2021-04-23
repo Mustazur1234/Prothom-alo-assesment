@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Heading from './Heading';
+import SubHeading from './SubHeading';
+import prothom from '../src/image/prothom.svg';
+import News from './News';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="header_img">
+        <img src={prothom} alt="prothom alo"/>
+        </div>
+      
+      <Heading/>
+     <SubHeading/>
+     <News/>
     </div>
   );
 }
